@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CommonLoginComponentComponent } from './common-login-component.component';
+import {CommonLoginComponentComponent} from './common-login-component.component';
 
 describe('CommonLoginComponentComponent', () => {
   let component: CommonLoginComponentComponent;
@@ -8,9 +8,9 @@ describe('CommonLoginComponentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CommonLoginComponentComponent ]
+      declarations: [CommonLoginComponentComponent],
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -8,6 +8,7 @@ import {
   NbResetPasswordComponent,
 } from '@nebular/auth';
 import {CommonLoginComponentComponent} from './sparrow/auth/common-login-component/common-login-component.component';
+import {SparrowAuthComponent} from './sparrow/sparrow-auth-component';
 
 export const routes: Routes = [
   {
@@ -21,8 +22,12 @@ export const routes: Routes = [
       .then(m => m.SparrowModule),
   },
   {
+    path: 'abc',
+    component: CommonLoginComponentComponent,
+  },
+  {
     path: 'auth',
-    component: NbAuthComponent,
+    component: SparrowAuthComponent,
     children: [
       {
         path: '',

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'ngx-one-column-layout',
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <ngx-header></ngx-header>
       </nb-layout-header>
 
-      <nb-sidebar [state]="'compacted'" class="menu-sidebar" tag="menu-sidebar" responsive>
+      <nb-sidebar [state]="'compacted'" class="menu-sidebar" tag="menu-sidebar">
         <ng-content select="nb-menu"></ng-content>
       </nb-sidebar>
 
@@ -23,4 +23,5 @@ import { Component } from '@angular/core';
     </nb-layout>
   `,
 })
-export class OneColumnLayoutComponent {}
+export class OneColumnLayoutComponent {
+}

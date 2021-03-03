@@ -7,16 +7,15 @@ import {SparrowRoutingModule} from './sparrow-routing.module';
 import {
   NbActionsModule,
   NbAlertModule,
-  NbButtonModule,
+  NbButtonModule, NbCardModule,
   NbCheckboxModule,
   NbIconModule,
-  NbInputModule,
+  NbInputModule, NbLayoutModule,
   NbMenuModule, NbSearchModule, NbUserModule,
 } from '@nebular/theme';
 import {NbAuthModule, NbAuthSimpleToken, NbPasswordAuthStrategy} from '@nebular/auth';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonLoginComponentComponent} from './auth/common-login-component/common-login-component.component';
-
 
 @NgModule({
   declarations: [SparrowComponent, CommonLoginComponentComponent],
@@ -57,7 +56,8 @@ import {CommonLoginComponentComponent} from './auth/common-login-component/commo
     NbActionsModule,
     NbSearchModule,
     NbUserModule,
-  ],
+    NbLayoutModule,
+    NbCardModule],
 })
 export class SparrowModule {
 }
