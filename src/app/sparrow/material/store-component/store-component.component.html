@@ -1,0 +1,13 @@
+<nb-card [ngClass]="'on'" (click)="op()">
+  <div class="icon-container">
+    <div class="icon status-{{ type }}">
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="title h5">{{ title }}</div>
+    <div class="title h7"> @</div>
+    <div class="status paragraph-2">{{address}}</div>
+  </div>
+</nb-card>

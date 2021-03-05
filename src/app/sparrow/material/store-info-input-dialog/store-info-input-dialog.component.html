@@ -1,0 +1,29 @@
+<nb-card>
+  <nb-card-header>Block form</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputEmail" class="label">仓库名称</label>
+          <input #name type="email" nbInput fullWidth id="inputEmail" placeholder="名称">
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">
+          <label for="inputWebsite" class="label">仓库地址</label>
+          <input #address type="text" nbInput fullWidth id="inputWebsite" placeholder="地址">
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+  <nb-card-footer>
+    <div class="row">
+      <div class="col-sm-5">
+        <button class="cancel" fullWidth nbButton status="danger" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="col-sm-5">
+        <button nbButton fullWidth status="success" (click)="submit(name.value, address.value)">Submit</button>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>
